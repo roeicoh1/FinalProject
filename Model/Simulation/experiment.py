@@ -200,7 +200,7 @@ class Experiment:
 
         for experiment in experiments:
             experiment.save(path=path)
-        Analysis.multiple_experiment_facade(experiments)
+        Analysis.multiple_experiment_facade(experiments,export_path=path)
 
     @classmethod
     def save_graphs(cls, experiments):
